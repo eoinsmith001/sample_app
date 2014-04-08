@@ -11,6 +11,7 @@ group :development do
   gem 'spork-rails', '~> 4.0.0'
   gem 'guard-spork', '~> 1.5.1'
   gem 'childprocess', '~> 0.5.2'
+  gem 'launchy', '~> 2.4.2'
 end
 
 group :test do
