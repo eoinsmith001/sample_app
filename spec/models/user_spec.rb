@@ -39,7 +39,7 @@ describe User do
   end
 
   describe "when email format is invalid" do
-    addresses = %w[user@foo,com user_at_foo.org example.user@foo. foo@bar_baz.com foo@bar+baz.com]
+    addresses = %w[user@foo..com, user@foo,com user_at_foo.org example.user@foo. foo@bar_baz.com foo@bar+baz.com]
     addresses.each do |invalid_address|
       before { @user.email = invalid_address }
       it { should_not be_valid }
